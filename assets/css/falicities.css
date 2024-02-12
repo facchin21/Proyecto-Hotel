@@ -1,0 +1,39 @@
+
+/* Main facilities */
+.layout__menu {
+    background-image: linear-gradient( 0deg, rgba(20,38,72,0.5), rgba(20,38,72,0.5) ) ,
+    url(../image/Mask\ Group.png);
+}
+
+.layout__main-facilities{
+    width: 100%;
+    text-align: center;
+}
+
+.main-facilities__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+    color: var(--color-principal);
+}
+.main-facilities__title{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.main-facilities__description{
+    font-size: 1.7rem;
+    width: 85rem;
+    margin-bottom: 4rem;
+}
+
+.main-facilities-container-img{
+    width: 85rem;
+    margin-bottom: 6rem;   
+    transition: all 300ms ease; 
+}
+.main-facilities-container-img:hover{
+    transform: scale(1.1);
+}

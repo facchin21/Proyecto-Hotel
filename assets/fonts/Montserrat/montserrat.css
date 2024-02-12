@@ -1,0 +1,13 @@
+@font-face{
+    font-family: 'Monserrat';
+    src: url('./Montserrat-Regular.ttf') format('ttf');
+}
+/* AGREGO OTRA FUENTE */
+@font-face{
+    font-family: 'Adobe';
+    src: url('../Adobe-Garamond-Pro/AGaramondPro-Bold.otf') format('oft');
+}
+@font-face{
+    font-family: 'Adobe-R';
+    src: url('../Adobe-Garamond-Pro/AGaramondPro-Regular.otf') format('oft');
+}

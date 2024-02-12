@@ -1,0 +1,38 @@
+/* Inicio de Media Querry */
+@media (max-width:1073px){
+    .main-facilities-container-img{
+        width: 70rem;
+    }
+    .main-facilities__description{
+        width: 70rem;
+    }
+}
+
+@media (max-width:781px){
+    .main-facilities-container-img{
+        width: 50rem;
+    }
+    .main-facilities__description{
+        width: 50rem;
+    }
+}
+
+@media (max-width:529px){
+    .main-facilities-container-img{
+        width: 30rem;
+    }
+    .main-facilities__description{
+        width: 30rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:307px){
+    .main-facilities-container-img{
+        width: 20rem;
+    }
+    .main-facilities__description{
+        width: 20rem;
+        font-size: 1.2rem;
+    }
+}

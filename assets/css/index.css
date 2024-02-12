@@ -1,0 +1,363 @@
+/* Variables */
+:root{
+
+    --color-principal: #142648;
+    --color-secondary: #FFFFFF;
+    --color-detalles: #E0B973;
+}
+
+/* Estilo General */
+
+html{
+    font-size: 10px;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    font-family: "Montserrat";
+}
+.layout{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* MENU */
+.layout__menu{
+    background-image: linear-gradient(
+        0deg,
+        rgba(20,38,72,0.5),
+        rgba(20,38,72,0.5)
+    )
+    ,url("../image/Mask\ Group1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100rem;
+}
+.nav__navbar-mobile,
+.navbar__mobile-btn{
+    display: none;
+}
+.layout__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+    width: 100%;
+}
+.nav__logo{
+    width: 15rem;
+    height: 10rem;
+    padding-left: 6rem;
+}
+.navbar__list{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-right: 6rem;
+}
+.navbar__item{
+    position: relative;
+}
+.navbar__link{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    color: var(--color-secondary);
+}
+.navbar__link::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0.2rem;
+    bottom: 0;
+    opacity: 0;
+    border-radius: 0.5rem;
+    background-color: var(--color-secondary);
+    transition: 450ms;
+}
+.navbar__link:hover::before{
+    width: 100%;
+    opacity: 1;
+}
+
+/* Layout de hader en banner */
+
+.layout__header{
+    width: 100%;
+    padding: 0 6rem;
+    margin-top: 10rem;
+    font-family: "Adobe";
+}
+.header__banner-container{
+    color: var(--color-secondary);
+}
+.banner__subtitle{
+    font-size: 3rem;
+    font-weight: 100;
+    font-family: "Adobe-R";
+}
+.banner__title{
+    font-size: 12rem;
+    font-weight: 500;
+    margin-top: -5rem;
+    margin-bottom: -5rem;
+}
+.banner__subtitle-hotels{
+    font-size: 4rem;
+    font-weight: 200;
+    text-align: justify;
+    text-transform: uppercase;
+}
+.banner__description{
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 2rem;
+    width: 27%;
+}
+.header__container-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35rem 0;
+    margin-left: -13rem;
+}
+.header__btn{
+    font-size: 2rem;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    margin-bottom: 4rem;
+    cursor: pointer;
+    color: var(--color-secondary);
+    background-color: var(--color-detalles);
+    transition: all 300ms ease-in-out;
+}
+.header__btn:hover,
+.article__btn:hover{
+    transform: scale(1.1);
+    background-color: var(--color-principal);
+}
+.btn__scroll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    transition: all 300ms;
+}
+.btn__scroll:hover{
+    transform: scale(1.1);
+    color: var(--color-secondary);
+    background-color: var(--color-detalles);
+}
+
+/* MAIN */
+
+.layout__main{
+    width: 100%;
+    margin: auto 0;
+    padding: 6rem 0;
+    background-color: var(--color-secondary);
+    color: var(--color-principal);
+}
+.main__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.main__description{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 6rem;
+}
+.main__articles-article{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3rem 0;
+    padding-left: 2rem;
+    transition: all 300ms ease-in-out;
+}
+.main__articles-article:hover{
+    border-left: 1px solid var(--color-principal);
+}
+.article__container-text{
+    width: 45rem;
+    margin-right: 5rem;
+}
+.article__title{
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.article__description{
+    font-size: 2rem;
+}
+.article__btn{
+    font-size: 1.6rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    border: none;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: var(--color-secondary);
+    background-color: var(--color-detalles);
+    transition: all 300ms ease-in-out;
+}
+.article__img{
+    width: 35rem;
+    transition: all 300ms ease;
+}
+.article__img:hover{
+    transform: scale(1.1);
+}
+
+/* TESTIMONIOS */
+.layout__testimonials{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+    color: var(--color-principal);
+}
+.testimonials__title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.testimonials__description{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.testimonials__span{
+    font-size: 1.3rem;
+    color: black;
+    opacity: 0.9;
+}
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+    background-color: var(--color-principal);
+    color: var(--color-secondary);
+}
+.footer__container-left{
+    width: 25%;
+    text-align: center;
+}
+.footer__title{
+    font-family: "Adobe";
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: -0.8rem;
+}
+.footer__description{
+    font-family: "Adobe";
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.footer__location,
+.footer__number,
+.footer__email{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.footer__container-list{
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer__list{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer__item{
+    transition: all 300ms ease-in-out;
+}
+.footer__item:hover{
+    color: var(--color-detalles);
+}
+.footer__redes{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer__social{
+    font-size: 1.8rem;
+    margin: 0.6rem;
+    cursor: pointer;
+}
+.footer__span-redes{
+    cursor: pointer;
+}
+.footer__item-redes{
+    transition: all 300ms ease-in-out;
+}
+.footer__item-redes:hover{
+    color: var(--color-detalles);
+}
+.footer__suscribite{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.suscribite__description{
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-bottom: 2rem;
+}
+.suscribite__container-btn{
+    display: flex;
+    align-items: center;
+}
+.suscribite__input{
+    border: 1px solid var(--color-detalles);
+    border-radius: 0.3rem;
+    padding: 0.5rem 2rem;
+    border-right: none;
+    background: none;
+}
+.suscribite__input::placeholder{
+    color: var(--color-secondary);
+    opacity: 0.9;
+}
+.suscribite__input:focus{
+    outline: none;
+}
+.suscribite__btn{
+    padding: 0.5rem 1rem;
+    color: var(--color-principal);
+    border-radius: 0.3rem;
+    border-left: none;
+    margin-left: -0.5rem;
+    cursor: pointer;
+    background-color: var(--color-detalles);
+    border: 1px solid var(--color-detalles);
+}

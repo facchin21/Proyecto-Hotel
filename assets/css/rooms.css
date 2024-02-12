@@ -1,0 +1,135 @@
+.layout__menu {
+    background-image: linear-gradient( 0deg, rgba(20,38,72,0.5), rgba(20,38,72,0.5) ) ,
+    url(../image/Mask\ Group2.png);
+}
+.layout__main-rooms{
+    width: 100%;
+    text-align: center;
+}
+.main-rooms__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 0;
+    color: var(--color-principal);
+}
+
+.main-rooms__title{
+    font-size: 2.7rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.main-rooms__description{
+    font-size: 1.5rem;
+    width: 70rem;
+    margin-bottom: 4rem;
+}
+.main-rooms__articles{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.articles__article{
+    width: 70rem;
+    border: 1px solid var(--color-principal);
+    border-top: none;
+    border-radius: 0.5rem;
+}
+.article__container-text{
+    height: 5rem;
+    width: 100%;
+    line-height: 2;
+    color: var(--color-secondary);
+    background-color: var(--color-principal);
+}
+.article__habitacion{
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.article__container-extra{
+    display: flex;
+    padding: 3rem 6rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article__left-extra{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.extra__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--color-secondary);
+    background-color: var(--color-detalles);
+    transition: all 300ms ease;
+}
+.extra__btn:hover,
+.extra__btn-price:hover{
+    background-color: var(--color-principal);
+}
+.extra__span{
+    font-weight: 600;
+}
+.extra__btn-price{
+    font-size: 1.3rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    cursor: pointer;
+    color: var(--color-secondary);
+    background-color: var(--color-detalles);
+    transition: all 300ms ease;
+}
+
+/* Inicio de Media Querry */
+@media (max-width:770px){
+    .main-rooms__description {
+        width: 50rem;
+        font-size: 1.3rem;
+    }
+    .articles__article{
+        width: 50rem;
+    }
+}
+
+@media (max-width:543px){
+    .main-rooms__description {
+        width: 30rem;
+        font-size: 1.2rem;
+    }
+    .articles__article{
+        width: 30rem;
+    }
+    .article__container-extra{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width:309px){
+    .main-rooms__description {
+        width: 20rem;
+        font-size: 1.1rem;
+    }
+    .articles__article{
+        width: 20rem;
+    }
+    .extra__span{
+        font-size: 1.2rem;
+    }
+    .article__container-extra {
+        padding: 3rem;
+    }
+    .extra__btn-price{
+        font-size: 1.1rem;
+    }
+}
